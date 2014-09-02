@@ -20,17 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-    Mattermark.configure do |c|
-      c.api_key = 'your_api_key'
-    end
+```ruby
+  Mattermark.configure do |c|
+    c.api_key = 'your_api_key'
+  end
 
-    client = Mattermark::Client.new
+  client = Mattermark::Client.new
 
-    begin
-      puts client.companies
-    rescue Mattermark::Forbidden
-      puts "Forbidden!"
-    end
+  begin
+    puts client.companies
+  rescue Mattermark::Forbidden
+    puts "Forbidden!"
+  end
+```
 
 ## Contributing
 
