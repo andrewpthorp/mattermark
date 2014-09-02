@@ -11,6 +11,6 @@ class Mattermark::ClientTest < Minitest::Unit::TestCase
   end
 
   def test_base_url
-    assert_equal "https://mattermark.com/app/v0/", @client.base_url
+    assert_equal 'https://mattermark.com/app/v0', @client.base_url
   end
 end

@@ -14,7 +14,7 @@ module Mattermark
     end
 
     def base_url
-      "https://mattermark.com/app/v0/"
+      'https://mattermark.com/app/v0'
     end
 
     include Mattermark::Request
